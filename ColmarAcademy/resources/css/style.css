@@ -1,0 +1,477 @@
+html {
+  font-size: 16px;
+}
+
+/*Navigation Bar*/
+
+.navbar {
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  align-items: center;
+  background-color: #ffffff;
+  font-family: "Mukta Mahee";
+  opacity: 0.8;
+}
+
+.logo {
+  display: flex;
+  flex-grow: 1;
+}
+
+.logo img {
+  padding-left: 1.5rem;
+  height: 3rem;
+}
+
+.logo h2 {
+  font-size: 1.5rem;
+  align-self: center;
+  padding-left: .3rem;
+  color: #c1c1c1;
+}
+
+.logo span {
+  color: #4a4a4a;
+}
+
+.navbar a {
+  padding-right: 1rem;
+  color: #4a4a4a;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+@media only screen and (max-width: 1600px){
+.img-mobile {
+  display: none;
+}
+}
+
+@media only screen and (max-width: 560px) {
+  .navbar span {
+    display: none;
+  }
+  .logo h2 {
+    display: none;
+  }
+  .img-mobile {
+    display: inline-block;
+    padding: 2rem;
+
+  }
+}
+
+/*Banner*/
+
+.banner {
+  background-color: #d8d8d8;
+  display: flex;
+  align-items: center;
+  font-family: "Mukta Mahee";
+}
+
+.banner img {
+  width: 60%;
+  padding: 6rem 1.5rem 2rem 1.5rem;
+}
+
+.headline {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  width: 20rem;
+  padding: 1.5rem 3rem 1.5rem 1.5rem;
+}
+
+.headline h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 2.5rem;
+  color: #4a4a4a;
+}
+
+.headline span {
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.75rem;
+  color: #4a4a4a;
+  padding: 1.5rem 0;
+}
+
+#button {
+  background-color: #4a4a4a;
+  width: 20rem;
+  height: 2rem;
+  padding: .5rem;
+  text-align: center;
+  color: #d8d8d8;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 560px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner img {
+    width:100%;
+    padding:4rem 0 0 0;
+  }
+
+  .headline h1 {
+    padding-left: 1rem;
+  }
+
+  .headline span {
+    padding-left: 1rem;
+  }
+}
+
+/*Intro Uni*/
+
+.intro-uni {
+  display: flex;
+  font-family: "Mukta Mahee";
+  background-color: #F3F5F5;
+}
+
+.link-articles {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-info {
+  max-width: 62%;
+  margin-left: 1.5rem;
+  color: #4a4a4a;
+}
+
+.main-info img {
+  width: 97%;
+  padding: 2rem 0;
+}
+
+.main-info h2 {
+  padding-bottom:1.5rem;
+  font-size: 1.75rem;
+  font-weight: 800;
+  width: 97%;
+}
+
+.main-info p {
+  width: 97%;
+  padding-bottom:2rem;
+  line-height: 1.4rem;
+}
+
+#author {
+  font-size: .9rem;
+}
+
+.main-info-small {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #4a4a4a;
+  border-bottom: solid 1px #d8d8d8;
+}
+
+.link-articles {
+  padding-top: 1rem;
+  border-left: solid 1px #d8d8d8;
+}
+
+.main-info-small:hover {
+  transition: background-color 1s ease; background-color: #c1c1c1;
+}
+
+.intro-img {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.intro-img-mobile {
+  display: none;
+}
+
+.text {
+  padding-right: 1.5rem;
+}
+
+.text a {
+  align-self: flex-end;
+  color: #2F84EA;
+}
+
+.text p {
+  padding: .5rem 0;
+  line-height: 1.4rem;
+}
+
+.text h4 {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 560px) {
+  .intro-uni {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-info {
+    display: none;
+  }
+
+  .link-articles {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .main-info-small {
+    display: flex;
+    flex-direction: column;
+    max-width:35rem;
+    max-height: 50rem;
+    padding: 1rem;
+    overflow:hidden;
+  }
+
+  .intro-img {
+    display: none;
+  }
+
+  .intro-img-mobile {
+    display: block;
+   width: 100%;
+   max-width: 30rem;
+   height: auto;
+  }
+
+  .text {
+    align-self: flex-start;
+    padding: 1rem 2rem;
+
+  }
+
+}
+
+/*Courses*/
+
+.learning {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  padding: 0 4.5rem 2rem 4.5rem;
+  font-family: "Mukta Mahee";
+  color: #4a4a4a;
+  background-color: #d8d8d8;
+}
+
+.learning h1 {
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  margin: 0 1rem 1rem 1rem;
+  width: 27%;
+  padding-bottom: 1.5rem;
+  background-color: #ffffff;
+}
+
+.courses img {
+  height: auto;
+  width: 100%;
+}
+
+.courses span {
+  padding-top: .5rem;
+  padding-left: 1rem;
+  line-height: 1.4rem;
+}
+
+.courses h5 {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.button-courses{
+  display: none;
+}
+
+@media only screen and (max-width: 560px) {
+  .courses {
+    display: none;
+  }
+
+  .button-courses {
+    display: inline-block;
+    width: 100%;
+    min-width: 10rem;
+    height: 2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding:1rem 5rem 1.5rem 1rem;
+    margin:  0 1rem .5rem 1rem;
+    background-color: #c1c1c1;
+    border-radius: .5rem;
+  }
+
+  .button-courses a {
+    text-decoration: none;
+    color:inherit;
+  }
+
+
+}
+
+/*Thesis exhibit*/
+
+.exhibit {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Mukta Mahee";
+  color: #4a4a4a;
+  background-color: #ededed;
+}
+
+.exhibit h1 {
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.video {
+  max-width: 55%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.5rem 2rem 1.5rem;
+}
+
+.video video {
+  width: 100%;
+}
+
+.video h4 {
+  padding: 1.5rem 0 .5rem 0;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.video p {
+  line-height: 1.4rem;
+}
+
+.second-column {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 40%;
+}
+
+.fisma {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fisma:hover {
+  transition: background-color 1s ease;
+  background-color: #c1c1c1;
+}
+
+.fisma img {
+  padding: 1rem;
+  max-width: 35%;
+}
+
+.fisma-text h4 {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.fisma-text span {
+  line-height: 1.4rem;
+}
+
+@media only screen and (max-width: 560px) {
+  .second-column {
+    display: none;
+  }
+
+  .exhibit h1 {
+    padding: 2rem 0 1rem 0;
+  }
+
+  .video video {
+  height: 10rem;
+  width: 100%;
+  overflow: hidden;
+  }
+
+  .video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+
+
+  }
+
+  .video h4 {
+    display: none;
+  }
+
+  .video p {
+    display: none;
+  }
+
+}
+
+/*Footer*/
+
+footer {
+  background-color: #d8d8d8;
+  border-top: solid 0.5px #bababa;
+  padding: 1rem 1.5rem 3rem 1rem;
+  font-family: "Mukta Mahee";
+  color: #4a4a4a;
+  display: flex;
+
+}
+
+#rights {
+ flex-grow: 1;
+
+}
+
+footer span {
+  padding-left: 2rem;
+}
+
+@media only screen and (max-width: 560px) {
+
+  #terms {
+    display: none;
+  }
+
+  #rights {
+    padding: 1rem 0;
+  }
+}
