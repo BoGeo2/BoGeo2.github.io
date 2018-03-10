@@ -42,6 +42,7 @@ html {
   font-size: 1.2rem;
   text-decoration: none;
 }
+
 @media only screen and (max-width: 1600px){
 .img-mobile {
   display: none;
@@ -115,6 +116,7 @@ html {
     display: flex;
     flex-direction: column;
   }
+
   .banner img {
     width:100%;
     padding:4rem 0 0 0;
@@ -230,7 +232,6 @@ html {
   .link-articles {
     display: flex;
     flex-direction: column;
-
   }
 
   .main-info-small {
@@ -256,7 +257,6 @@ html {
   .text {
     align-self: flex-start;
     padding: 1rem 2rem;
-
   }
 
 }
@@ -335,8 +335,6 @@ html {
     text-decoration: none;
     color:inherit;
   }
-
-
 }
 
 /*Thesis exhibit*/
@@ -430,8 +428,6 @@ html {
   max-width: 100%;
   height: auto;
   display: block;
-
-
   }
 
   .video h4 {
@@ -441,7 +437,6 @@ html {
   .video p {
     display: none;
   }
-
 }
 
 /*Footer*/
@@ -453,12 +448,10 @@ footer {
   font-family: "Mukta Mahee";
   color: #4a4a4a;
   display: flex;
-
 }
 
 #rights {
  flex-grow: 1;
-
 }
 
 footer span {
