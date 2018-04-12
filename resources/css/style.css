@@ -388,6 +388,7 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100%;
 }
 
 .fisma:hover {
@@ -397,7 +398,7 @@ html {
 
 .fisma img {
   padding: 1rem;
-  max-width: 35%;
+  max-width: 40%;
 }
 
 .fisma-text h4 {
