@@ -5,29 +5,44 @@ html {
 /*Navigation Bar*/
 
 .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  height: 64px;
   height: 4rem;
   width: 100%;
   position: fixed;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #ffffff;
   font-family: "Mukta Mahee";
   opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
 
 .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .logo img {
+  padding-left: 24px;
   padding-left: 1.5rem;
+  height: 48px;
   height: 3rem;
 }
 
 .logo h2 {
+  font-size: 24px;
   font-size: 1.5rem;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding-left: 4.8px;
   padding-left: .3rem;
   color: #c1c1c1;
 }
@@ -37,8 +52,10 @@ html {
 }
 
 .navbar a {
+  padding-right: 16px;
   padding-right: 1rem;
   color: #4a4a4a;
+  font-size: 19.2px;
   font-size: 1.2rem;
   text-decoration: none;
 }
@@ -67,54 +84,81 @@ html {
 
 .banner {
   background-color: #d8d8d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Mukta Mahee";
 }
 
 .banner img {
   width: 60%;
+  padding: 96px 24px 32px 24px;
   padding: 6rem 1.5rem 2rem 1.5rem;
 }
 
 .headline {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-self: center;
-  flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 320px;
   width: 20rem;
+  padding: 24px 48px 24px 24px;
   padding: 1.5rem 3rem 1.5rem 1.5rem;
 }
 
 .headline h1 {
+  font-size: 32px;
   font-size: 2rem;
   font-weight: 800;
+  line-height: 40px;
   line-height: 2.5rem;
   color: #4a4a4a;
 }
 
 .headline span {
   font-weight: 700;
+  font-size: 20.8px;
   font-size: 1.3rem;
+  line-height: 28px;
   line-height: 1.75rem;
   color: #4a4a4a;
+  padding: 24px 0;
   padding: 1.5rem 0;
 }
 
 #button {
   background-color: #4a4a4a;
+  width: 320px;
   width: 20rem;
+  height: 32px;
   height: 2rem;
+  padding: 8px;
   padding: .5rem;
   text-align: center;
   color: #d8d8d8;
   text-decoration: none;
+  font-size: 20.8px;
   font-size: 1.3rem;
 }
 
 @media only screen and (max-width: 560px) {
   .banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .banner img {
@@ -134,29 +178,40 @@ html {
 /*Intro Uni*/
 
 .intro-uni {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-family: "Mukta Mahee";
   background-color: #F3F5F5;
 }
 
 .link-articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-info {
   max-width: 62%;
+  margin-left: 24px;
   margin-left: 1.5rem;
   color: #4a4a4a;
 }
 
 .main-info img {
   width: 97%;
+  padding: 32px 0;
   padding: 2rem 0;
 }
 
 .main-info h2 {
+  padding-bottom: 24px;
   padding-bottom:1.5rem;
+  font-size: 28px;
   font-size: 1.75rem;
   font-weight: 800;
   width: 97%;
@@ -164,34 +219,47 @@ html {
 
 .main-info p {
   width: 97%;
+  padding-bottom: 32px;
   padding-bottom:2rem;
+  line-height: 22.4px;
   line-height: 1.4rem;
 }
 
 #author {
+  font-size: 14.4px;
   font-size: .9rem;
 }
 
 .main-info-small {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #4a4a4a;
   border-bottom: solid 1px #d8d8d8;
 }
 
 .link-articles {
+  padding-top: 16px;
   padding-top: 1rem;
   border-left: solid 1px #d8d8d8;
 }
 
 .main-info-small:hover {
+  -webkit-transition: background-color 1s ease;
   transition: background-color 1s ease; background-color: #c1c1c1;
 }
 
 .intro-img {
   width: 35%;
   height: auto;
+  padding: 16px;
   padding: 1rem;
 }
 
@@ -200,29 +268,41 @@ html {
 }
 
 .text {
+  padding-right: 24px;
   padding-right: 1.5rem;
 }
 
 .text a {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   color: #2F84EA;
 }
 
 .text p {
+  padding: 8px 0;
   padding: .5rem 0;
+  line-height: 22.4px;
   line-height: 1.4rem;
 }
 
 .text h4 {
   font-weight: 700;
+  font-size: 20.8px;
   font-size: 1.3rem;
 }
 
 @media only screen and (max-width: 560px) {
   .intro-uni {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .main-info {
@@ -230,13 +310,23 @@ html {
   }
 
   .link-articles {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .main-info-small {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     max-width:35rem;
     max-height: 50rem;
     padding: 1rem;
@@ -255,7 +345,8 @@ html {
   }
 
   .text {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     padding: 1rem 2rem;
   }
 
@@ -264,9 +355,15 @@ html {
 /*Courses*/
 
 .learning {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap:wrap;
-  justify-content:center;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  padding: 0 72px 32px 72px;
   padding: 0 4.5rem 2rem 4.5rem;
   font-family: "Mukta Mahee";
   color: #4a4a4a;
@@ -275,18 +372,29 @@ html {
 
 .learning h1 {
   width: 100%;
+  padding: 32px 0;
   padding: 2rem 0;
   text-align: center;
+  font-size: 32px;
   font-size: 2rem;
   font-weight: 800;
 }
 
 .courses {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items:flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align:start;
+      -ms-flex-align:start;
+          align-items:flex-start;
+  margin: 0 16px 16px 16px;
   margin: 0 1rem 1rem 1rem;
   width: 27%;
+  padding-bottom: 24px;
   padding-bottom: 1.5rem;
   background-color: #ffffff;
 }
@@ -297,14 +405,20 @@ html {
 }
 
 .courses span {
+  padding-top: 8px;
   padding-top: .5rem;
+  padding-left: 16px;
   padding-left: 1rem;
+  line-height: 22.4px;
   line-height: 1.4rem;
 }
 
 .courses h5 {
+  padding-top: 16px;
   padding-top: 1rem;
+  padding-left: 16px;
   padding-left: 1rem;
+  font-size: 19.2px;
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -340,8 +454,11 @@ html {
 /*Thesis exhibit*/
 
 .exhibit {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-family: "Mukta Mahee";
   color: #4a4a4a;
   background-color: #ededed;
@@ -349,8 +466,10 @@ html {
 
 .exhibit h1 {
   width: 100%;
+  padding: 32px 0;
   padding: 2rem 0;
   text-align: center;
+  font-size: 32px;
   font-size: 2rem;
   font-weight: 800;
 }
@@ -358,8 +477,14 @@ html {
 .video {
   max-width: 55%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 24px 32px 24px;
   margin: 0 1.5rem 2rem 1.5rem;
 }
 
@@ -368,45 +493,66 @@ html {
 }
 
 .video h4 {
+  padding: 24px 0 8px 0;
   padding: 1.5rem 0 .5rem 0;
   font-weight: 700;
+  font-size: 20.8px;
   font-size: 1.3rem;
 }
 
 .video p {
+  line-height: 22.4px;
   line-height: 1.4rem;
 }
 
 .second-column {
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 40%;
 }
 
 .fisma {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
 .fisma:hover {
+  -webkit-transition: background-color 1s ease;
   transition: background-color 1s ease;
   background-color: #c1c1c1;
 }
 
 .fisma img {
+  padding: 16px;
   padding: 1rem;
   max-width: 40%;
 }
 
 .fisma-text h4 {
   font-weight: 700;
+  font-size: 20.8px;
   font-size: 1.3rem;
 }
 
 .fisma-text span {
+  line-height: 22.4px;
   line-height: 1.4rem;
 }
 
@@ -445,17 +591,23 @@ html {
 footer {
   background-color: #d8d8d8;
   border-top: solid 0.5px #bababa;
+  padding: 16px 24px 48px 16px;
   padding: 1rem 1.5rem 3rem 1rem;
   font-family: "Mukta Mahee";
   color: #4a4a4a;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 #rights {
- flex-grow: 1;
+ -webkit-box-flex: 1;
+     -ms-flex-positive: 1;
+         flex-grow: 1;
 }
 
 footer span {
+  padding-left: 32px;
   padding-left: 2rem;
 }
 
